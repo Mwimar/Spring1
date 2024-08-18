@@ -1,4 +1,4 @@
-package org.example;
+package com.spring1;
 
 public class Alien {
     public void code(){
