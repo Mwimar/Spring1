@@ -6,7 +6,8 @@
 
     <!-- bean definitions here -->
 
-<bean id ="alien1" class="com.spring1.Alien" scope="singleton"> </bean>
+<!--<bean id ="alien1" class="com.spring1.Alien" scope="singleton"> </bean>-->
+    <bean id ="alien1" class="com.spring1.Alien" scope="prototype"> </bean>
     <bean id ="laptop" class="com.spring1.Laptop"> </bean>
 </beans>
 
