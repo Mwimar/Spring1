@@ -3,8 +3,15 @@ package com.spring1;
 import java.beans.ConstructorProperties;
 
 public class Alien {
-    private Laptop lap;
+    private Computer com;
 
+    public Computer getCom() {
+        return com;
+    }
+
+    public void setCom(Computer com) {
+        this.com = com;
+    }
 
     public int getAge() {
         return age;
@@ -16,30 +23,22 @@ public class Alien {
     }
 
     private int age;
-    private int salary;
 
 
     public Alien(){
         System.out.println("Alien object");
     }
 
-    @ConstructorProperties({"lap", "age"})
-    public Alien(Laptop lap, int age) {
-        this.lap = lap;
-        this.age = age;
+//    @ConstructorProperties({"lap", "age"})
+//    public Alien(Computer com, int age) {
+//        this.com = com;
+//        this.age = age;
+//
+//    }
 
-    }
-
-    public Laptop getLap() {
-        return lap;
-    }
-
-    public void setLap(Laptop lap) {
-        this.lap = lap;
-    }
 
     public void code(){
         System.out.println("Coding...");
-        lap.compile();
+        com.compile();
     }
 }
