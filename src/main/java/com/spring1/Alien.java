@@ -13,7 +13,10 @@ public class Alien {
         System.out.println("Calling setter");
     }
 
-    private int age =25;
+    private int age;
+    private int salary;
+
+
     public Alien(){
         System.out.println("Alien object");
     }
@@ -21,6 +24,7 @@ public class Alien {
     public Alien(Laptop lap, int age) {
         this.lap = lap;
         this.age = age;
+
     }
 
     public Laptop getLap() {
