@@ -1,5 +1,7 @@
 package com.spring1;
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
     private Laptop lap;
 
@@ -21,6 +23,7 @@ public class Alien {
         System.out.println("Alien object");
     }
 
+    @ConstructorProperties({"lap", "age"})
     public Alien(Laptop lap, int age) {
         this.lap = lap;
         this.age = age;
