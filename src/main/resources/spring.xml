@@ -8,10 +8,11 @@
 
 <!--<bean id ="alien1" class="com.spring1.Alien" scope="singleton"> </bean>-->
     <bean id ="alien1" class="com.spring1.Alien">
-    <property name="age" value="21"> </property>
+    <property name="age" value="21" > </property>
+        <property name="lap" ref="lap1"></property>
 
     </bean>
-    <bean id ="laptop" class="com.spring1.Laptop"> </bean>
+    <bean id="lap1"  class="com.spring1.Laptop"> </bean>
 </beans>
 
 
