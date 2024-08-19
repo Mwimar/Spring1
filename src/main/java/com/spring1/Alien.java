@@ -3,6 +3,9 @@ package com.spring1;
 public class Alien {
     private Laptop lap;
 
+    public Alien(Laptop lap) {
+        this.lap = lap;
+    }
 
     public int getAge() {
         return age;
