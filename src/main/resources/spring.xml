@@ -8,15 +8,16 @@
 
 <!--<bean id ="alien1" class="com.spring1.Alien" scope="singleton"> </bean>-->
     <bean id ="alien1" class="com.spring1.Alien">
+    <property name="age" value="21" > </property>
+        <property name="com" ref="lap1"></property>
 <!--        <constructor-arg type="com.spring1.Laptop" ref="lap1"/>-->
 <!--        <constructor-arg type="int" value="21"/>-->
 <!--                <constructor-arg index="0" ref="lap1"/>-->
 <!--                <constructor-arg index="1" value="21"/>-->
-        <constructor-arg name="lap" ref="lap1"/>
-        <constructor-arg name="age" value="21"/>
+<!--        <constructor-arg name="lap" ref="lap1"/>-->
+<!--        <constructor-arg name="age" value="21"/>-->
 
-<!--    <property name="age" value="21" > </property>-->
-<!--        <property name="lap" ref="lap1"></property>-->
+
     </bean>
     <bean id="lap1"  class="com.spring1.Laptop"> </bean>
 </beans>
