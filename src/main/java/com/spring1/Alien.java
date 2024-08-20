@@ -19,7 +19,7 @@ public class Alien {
 
     public void setAge(int age) {
         this.age = age;
-        System.out.println("Calling setter");
+//        System.out.println("Calling setter");
     }
 
     private int age;
