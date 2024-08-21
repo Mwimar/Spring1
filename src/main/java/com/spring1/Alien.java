@@ -26,7 +26,7 @@ public class Alien {
 
 
     public Alien(){
-        System.out.println("Alien object");
+        System.out.println("Alien object created");
     }
 
 //    @ConstructorProperties({"lap", "age"})
