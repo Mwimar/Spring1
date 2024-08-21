@@ -1,7 +1,9 @@
 package com.spring1.config;
 
 import com.spring1.Alien;
+import com.spring1.Computer;
 import com.spring1.Desktop;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -10,8 +12,9 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
 
     @Bean
-    public Alien alien (){
+    public Alien alien (@Autowired Computer com){
         Alien obj = new Alien();
+        obj.setCom(com);
         obj.setAge(25);
         return obj;
     }
