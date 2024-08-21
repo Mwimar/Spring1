@@ -8,8 +8,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
+
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
+        Desktop dt = context.getBean(Desktop.class);
 
 
 
