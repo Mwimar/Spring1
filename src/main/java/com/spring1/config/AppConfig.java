@@ -1,5 +1,6 @@
 package com.spring1.config;
 
+import com.spring1.Alien;
 import com.spring1.Desktop;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,6 +8,13 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig {
+
+    @Bean
+    public Alien alien (){
+        Alien obj = new Alien();
+        obj.setAge(25);
+        return obj;
+    }
 
 //    @Bean(name = {"com1", "Don", "Ace" })
 

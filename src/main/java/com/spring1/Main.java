@@ -13,7 +13,7 @@ public class Main {
 
 
         Alien obj = context.getBean(Alien.class);
-      obj.setAge(30);
+
        obj.code();
 
 
