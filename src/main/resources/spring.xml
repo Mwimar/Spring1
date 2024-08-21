@@ -19,8 +19,8 @@
 
 
     </bean>
-    <bean id="com1"  class="com.spring1.Laptop"> </bean>
-<!--    <bean id="com"  class="com.spring1.Desktop"> </bean>-->
+    <bean id="com1"  class="com.spring1.Laptop" primary="true"> </bean>
+    <bean id="com"  class="com.spring1.Desktop"> </bean>
 <!--    <bean id="lap2"  class="com.spring1.Laptop"> </bean>-->
 </beans>
 
