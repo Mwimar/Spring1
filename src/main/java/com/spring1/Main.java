@@ -11,7 +11,7 @@ public class Main {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Desktop dt = context.getBean(Desktop.class);
+        Desktop dt = context.getBean("com1",Desktop.class);
 
         dt.compile();
 
