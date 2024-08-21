@@ -8,8 +8,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
-
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
+
+
+        Alien obj = context.getBean(Alien.class);
+      obj.setAge(30);
+       obj.code();
+
+
+
+
+
+
 
         Desktop dt = context.getBean(Desktop.class);
         dt.compile();
@@ -19,20 +30,16 @@ public class Main {
 
 
 
-
-
-
-
-
-
-
-
-
-
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-//        Alien obj = (Alien) context.getBean("alien1", Alien.class);
-//      obj.setAge(30);
-//obj.code();
+
+
+
+
+
+
+
+
+
 //    System.out.println(obj.getAge());
 //Computer com = context.getBean(Computer.class);
 //Desktop obj1 = context.getBean( Desktop.class);

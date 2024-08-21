@@ -11,9 +11,13 @@ public class AppConfig {
 //    @Bean(name = {"com1", "Don", "Ace" })
 
     @Bean
-    @Scope(value = "prototype")
+    //@Scope(value = "prototype")
     public Desktop desktop(){
         return new Desktop();
     };
+
+
+
+
 
 }
