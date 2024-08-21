@@ -9,7 +9,7 @@ import java.beans.ConstructorProperties;
 @Component
 public class Alien {
     @Autowired
-    @Qualifier("laptop")
+@Qualifier("lap")
     private Computer com;
 
     public Computer getCom() {
