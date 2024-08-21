@@ -13,6 +13,8 @@ public class Main {
 
         Desktop dt = context.getBean(Desktop.class);
 
+        dt.compile();
+
 
 
 
