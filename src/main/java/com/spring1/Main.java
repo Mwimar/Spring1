@@ -6,11 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Alien obj = (Alien) context.getBean("alien1");
+        Alien obj = (Alien) context.getBean("alien1", Alien.class);
 //      obj.setAge(30);
 obj.code();
     System.out.println(obj.getAge());
 
-
+Desktop obj1 = context.getBean("com2", Desktop.class);
     }
 }
