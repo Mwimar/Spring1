@@ -10,7 +10,7 @@ public class Main {
 //      obj.setAge(30);
 obj.code();
     System.out.println(obj.getAge());
-
-Desktop obj1 = context.getBean("com2", Desktop.class);
+Computer com = context.getBean(Computer.class);
+Desktop obj1 = context.getBean( Desktop.class);
     }
 }
