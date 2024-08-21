@@ -2,6 +2,7 @@ package com.spring1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.beans.ConstructorProperties;
@@ -20,6 +21,9 @@ public class Alien {
         this.com = com;
     }
 
+    @Value("26")
+    private int age;
+
     public int getAge() {
         return age;
     }
@@ -29,7 +33,6 @@ public class Alien {
 //        System.out.println("Calling setter");
     }
 
-    private int age;
 
 
     public Alien(){
